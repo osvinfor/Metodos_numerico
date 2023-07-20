@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+main.container{
+    padding: 5px;
+}
+
+main.row{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+}
+
+.section-1 {
+    background: #282a35;
+    color: #ffffff;
+}
+.section-2 {
+    background: #f3ecea;
+    color: #000000;
+}
+
+.section-1 .card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 128px; */
+    color: #000000;
+    padding-top: 4px;
+    padding-bottom: 12px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.section-1 .card:nth-child(1) {
+    background-color: #d9eee1;
+}
+.section-1 .card:nth-child(2) {
+    background-color: #f3ecea;
+}
+.section-1 .card:nth-child(3) {
+    background-color: #ffc0c7;
+}
+
+.section-1 .row,  .section-2 .row{
+    width: 165px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.section-2 .card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 128px; */
+    color: #ffffff;
+    padding-top: 4px;
+    padding-bottom: 12px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.section-2 .card:nth-child(1) {
+    background-color: #282a35;
+}
+.section-2 .card:nth-child(2) {
+    background-color: #04aa6d;
+}
+
+.section-3 {
+    width: 100%;
+    height: 102px;
+    
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 721px;
+}
+
+.prob-1, .prob-2, .prob-3, .prob-4, .prob-5{
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+}
+
+.prob-1 {
+    background: #d9eee1;
+    color: #000000;
+    border: 2px solid #d9eee1;
+}
+.prob-1:hover {
+    background: #76c193;
+}
+.prob-2 {
+    background: #f3ecea;
+    color: #000000;
+    border: 2px solid #f3ecea;
+}
+.prob-2:hover {
+    background: #dac4be;
+}
+.prob-3 {
+    background: #ffc0c7;
+    color: #000000;
+    border: 2px solid #ffc0c7;
+}
+.prob-3:hover {
+    background: #ff8f9c;
+}
+.prob-4 {
+    background: #282a35;
+    color: #ffffff;
+    border: 2px solid #282a35;
+}
+.prob-4:hover {
+    background: #424557;
+}
+.prob-5 {
+    background: #04aa6d;
+    color: #ffffff;
+    border: 2px solid #04aa6d;
+}
+.prob-5:hover {
+    background: #03774d;
+}
+
+.btn-pro{
+    text-align: center;
+}
+
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
