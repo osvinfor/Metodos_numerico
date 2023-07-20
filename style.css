@@ -1,0 +1,162 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --i: -1;
+  --j: -1;
+  --r: 0px;
+  height: 100%;
+  background: url(https://i.ibb.co/sHs1ZQ9/Metodo3.jpg) 50%/cover #777;
+  background-blend-mode: luminosity;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 4em;
+  max-width: 1000px;
+  font: 1em/1.5 trebuchet ms, verdana, sans-serif;
+}
+
+header {
+  margin: 1rem;
+  padding: 1em 0;
+  border-radius: .5em;
+  min-width: 95%;
+  background: #fff;
+  text-align: center;
+}
+
+article {
+  overflow: hidden;
+  margin: 1rem;
+  width: 21em;
+  min-width: 15rem;
+  border-radius: 1em;
+}
+article:nth-of-type(1) {
+  --c0: #0f414c;
+  --c1: #79e9fd;
+}
+article:nth-of-type(2) {
+  --c0: #673a01;
+  --c1: #ddac43;
+}
+article:nth-of-type(3) {
+  --c0: #291c52;
+  --c1: #bba9ff;
+}
+article:nth-of-type(4) {
+  --c0: #36480c;
+  --c1: #b0d65f;
+}
+
+h3, section {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0.5rem;
+}
+h3:before, section:before {
+  position: absolute;
+  z-index: -1;
+  top: calc(var(--j)*1rem + (1 + var(--j))*50% - var(--r));
+  left: calc(var(--i)*1rem + (1 + var(--i))*50% - var(--r));
+  padding: var(--r);
+  border-radius: 50%;
+  box-shadow: 0 0 0 50em;
+  content: "";
+}
+
+h3:before, section {
+  color: var(--c1);
+}
+
+h3 {
+  justify-content: center;
+  color: #3b2828;
+  font-size: 1.75em;
+  text-align: center;
+  min-height: var(--r);
+}
+h3:before {
+  opacity: 0.65;
+}
+
+section {
+  justify-content: space-between;
+  min-height: calc(var(--r) - 1rem);
+}
+section:before {
+  color: var(--c0);
+}
+
+p {
+  margin-right: 1em;
+  font-size: .875em;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+a:after {
+  content: " ▶";
+}
+
+@media (min-width: 34rem) {
+  html {
+    --r: 4rem;
+  }
+
+  header {
+    position: relative;
+  }
+  header:before, header:after {
+    position: absolute;
+    left: 50%;
+    content: "";
+  }
+  header:before {
+    top: 100%;
+    width: calc(.0625*var(--r));
+    height: calc(2*var(--r) + 1rem);
+    transform: translate(-50%);
+    background: inherit;
+  }
+  header:after {
+    top: calc(3*1rem + 3.125*var(--r));
+    border: solid calc(.375*var(--r)) transparent;
+    padding: calc(.375*var(--r));
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 5px #fff;
+    background: #fff padding-box;
+  }
+
+  article {
+    width: 40%;
+  }
+  article:nth-of-type(-n + 2) {
+    --j: 1;
+  }
+  article:nth-of-type(odd) {
+    --i: 1;
+  }
+  article:nth-of-type(-n + 2) h3:before, article:nth-of-type(n + 3) section:before {
+    --r: 0;
+  }
+  article:nth-of-type(-n + 2) section, article:nth-of-type(n + 3) h3 {
+    padding-right: calc(.5*(1 + var(--i))*(var(--r) - 1rem) + 0.5rem);
+    padding-left: calc(.5*(1 - var(--i))*(var(--r) - 1rem) + 0.5rem);
+  }
+}

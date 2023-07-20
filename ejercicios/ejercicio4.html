@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Metodos</title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <script src="conexion4.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="hero_area">
+        <!-- header section strats -->
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+            <a class="navbar-brand" href="../index.html">
+                <img src="images/logo.png" alt="" />
+            </a>
+        </nav>
+
+        <section class="hero_section">
+            <div class="hero_detail">
+                <h3>
+                    Aproximación en el Método de Bisección
+                    </h2>
+            </div>
+
+            <br>
+            <p>Ecuación no lineal f(x) = x^2 - 4 </p>
+            <br>
+            <label for="intervaloA">Extremo izquierdo del intervalo:</label>
+            <input type="number" id="intervaloA">
+            <label for="intervaloB">Extremo derecho del intervalo:</label>
+            <input type="number" id="intervaloB">
+
+            <div class="hero_btn-box">
+                <a onclick="calcularRaiz()"> Resolver
+                </a>
+            </div><br><br>
+            <p id="resultado"></p>
+        </section>
+        <!-- end hero section -->
+    </div>
+    <!-- end hero area -->
+</body>
+
+</html>
+
