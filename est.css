@@ -1,0 +1,27 @@
+body{
+    background-image: url("https://st4.depositphotos.com/6440552/21668/i/450/depositphotos_216688130-stock-photo-3d-blue-mathematics-numbers-background.jpg");
+    background-size: 100%, 25%, 25%;
+}
+
+h1{
+    text-align: center;
+    display: flex;
+    color: rgb(255, 248, 248);
+   margin-top: 2%;
+   margin-left: 13%;
+   margin-right: 53%;
+   padding: 10px;
+   border-radius: 50px;
+   background-color: rgba(73, 73, 201, 0.856);
+}
+
+form{
+background-color: aqua;
+width: 200;
+padding: 10px;
+margin-top: 2%;
+margin-left: 13%;
+margin-right: 72%;
+border-radius: 25px;
+
+}
