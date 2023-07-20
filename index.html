@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Aproximación de Raíces</title>
-  <script src="newton_raphson.js"></script>
-  <script src="bisection.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="est.css">
+    
+    <title>METODOS NUMERICOS</title>
 </head>
+<head>
+    <!-- ... tus otras etiquetas meta y enlaces ... -->
+    <style>
+        body {
+            background-color: #F0EAD6; /* Color pastel de fondo */
+        }
+    </style>
+    <link rel="stylesheet" href="est.css"> <!-- Si el archivo est.css contiene estilos adicionales -->
+    <title>METODOS NUMERICOS</title>
+</head>
+
 <body>
-  <h1>Aproximación de Raíces</h1>
+  <script src="ejercicio.js"></script>
 
-  <h2>Método Newton-Raphson</h2>
-  <label for="x0">Aproximación inicial (x0):</label>
-  <input type="number" id="x0">
+    <h1>MÉTODO NÚMERICOS</h1>
 
-  <h3>Ecuación 1: f(x) = x^3 - 2x - 5</h3>
-  <button onclick="newtonRaphson1()">Resolver</button>
-  <input type="text" id="result1" readonly>
+    <form action=""><center >
+        <p>Ing. Oswaldo Mendoza</p></center>
+    </br>
+    <p>Ingrese el valor a (Inicial)</p>
+    <input type="text" id="a" name="a" >
+    <p>Ingrese el valor b</p>
+    <input type="text" id="b" name="b" >
+    <p>Ingrese el valor I</p>
+    <input type="text" id="i" name="i" >
+<p></p>
+<center >
+    <input type="button" class="button" value="EJERCICIO 1" onclick="EJERCICIO1()">
+    <input type="button" class="button" value="EJERCICIO 2" onclick="EJERCICIO2()">
+    <input type="button" class="button" value="EJERCICIO 3" onclick="EJERCICIO3()">
+    <input type="button" class="button" value="EJERCICIO 4" onclick="EJERCICIO4()">
+    <input type="button" class="button" value="EJERCICIO 5" onclick="EJERCICIO5()">
+   
 
-  <h3>Ecuación 2: f(x) = 2x^3 - 5x^2 + 3x + 1</h3>
-  <button onclick="newtonRaphson2()">Resolver</button>
-  <input type="text" id="result2" readonly>
+</center> 
 
-  <h3>Ecuación 3: f(x) = 2x^3 - 5x^2 + 3x + 1</h3>
-  <button onclick="newtonRaphson3()">Resolver</button>
-  <input type="text" id="result3" readonly>
-
-  <h2>Método de Bisección</h2>
-  <label for="a">Valor de a:</label>
-  <input type="number" id="a">
-  <label for="b">Valor de b:</label>
-  <input type="number" id="b">
-
-  <h3>Ecuación 1: f(x) = x^2 - 4</h3>
-  <button onclick="bisection1()">Resolver</button>
-  <input type="text" id="result4" readonly>
-
-  <h3>Ecuación 2: f(x) = cos(x) - x</h3>
-  <button onclick="bisection2()">Resolver</button>
-  <input type="text" id="result5" readonly>
+    </form>
+    <div id="resultados"></div>
 </body>
 </html>
-
