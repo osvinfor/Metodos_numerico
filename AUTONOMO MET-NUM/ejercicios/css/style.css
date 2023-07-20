@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Ethnocentric";
+  src: url("../fonts/ethnocentric/ethnocentric rg.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Ethnocentric";
+  src: url("../fonts/ethnocentric/ethnocentric rg it.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/ethnocentric/Poppins-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/ethnocentric/Poppins-Bold.ttf") format("ttf");
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Ethnocentric";
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  color: #101010;
+  background-color: #ffffff;
+}
+
+
+
+/*header section*/
+.hero_area {
+  height: 98vh;
+  background-image: url(../images/hero.jpg);
+}
+.navbar-brand img {
+  width: 175px;
+}
+.navbar-brand span {
+  color: #ffffff;
+  font-family: "Ethnocentric";
+}
+.custom_nav-container {
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*end header section*/
+.hero_section {
+  text-align: center;
+  color: #ffffff;
+
+
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 75%;
+}
+
+
+.hero_section .hero_btn-box a {
+  display: inline-block;
+  padding: 12px 55px;
+  background-color: transparent;
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+  margin-top: 55px;
+  text-transform: uppercase;
+}
+
+
